@@ -88,6 +88,9 @@ type Network struct {
 	// Used to make network resources highly available.
 	AvailabilityZoneHints []string `json:"availability_zone_hints"`
 
+	// The availability zone for the network.
+	AvailabilityZone []string `json:"availability_zones"`
+
 	// Tags optionally set via extensions/attributestags
 	Tags []string `json:"tags"`
 
