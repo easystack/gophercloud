@@ -53,9 +53,6 @@ type Quota struct {
 
 	// L7Rule represents the number of l7rules. A "-1" value means no limit.
 	L7Rule int `json:"l7rule"`
-
-	// LoadBalancer usage
-	LBInUse int `json:"in_use_load_balancer"`
 }
 
 // UnmarshalJSON provides backwards compatibility to OpenStack APIs which still
