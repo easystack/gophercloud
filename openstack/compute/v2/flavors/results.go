@@ -80,6 +80,9 @@ type Flavor struct {
 	// 65535 characters in length. Only printable characters are allowed.
 	// New in version 2.55
 	Description string `json:"description"`
+
+	// Get flavor extra_specs
+	ExtraSpecs extraSpecsResult `json:"extra_specs"`
 }
 
 func (r *Flavor) UnmarshalJSON(b []byte) error {
