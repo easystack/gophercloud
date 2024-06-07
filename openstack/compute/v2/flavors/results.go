@@ -82,7 +82,7 @@ type Flavor struct {
 	Description string `json:"description"`
 
 	// Get flavor extra_specs
-	ExtraSpecs string `json:"extra_specs"`
+	ExtraSpecs map[string]string `json:"extra_specs"`
 }
 
 func (r *Flavor) UnmarshalJSON(b []byte) error {
